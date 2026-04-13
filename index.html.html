@@ -1,3 +1,4 @@
+
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
 .wrap{background:#1A1A2E;padding:2.5rem 1.5rem 2rem;font-family:var(--font-sans);}
@@ -33,15 +34,11 @@
 .btn-secondary:hover{background:#F05A1A;color:#fff;}
 .certs{display:flex;justify-content:center;gap:8px;margin-top:1.25rem;flex-wrap:wrap;}
 .cert{font-size:10px;color:#5A5A7A;border:0.5px solid #2D2D4A;border-radius:4px;padding:3px 8px;}
-.container{position:relative;}
 </style>
 
-<div class="container" id="mainContainer">
 <div class="wrap">
-
   <div class="brand">
-   <img src="https://i.imgur.com/pVJYvA6.jpeg" alt="SADI ERP" style="height:52px;width:auto;object-fit:contain;" />
-    />
+    <img src="https://i.imgur.com/pVJYvA6.jpeg" alt="SADI ERP" style="height:52px;width:auto;object-fit:contain;">
     <div class="brand-text">
       <div style="display:flex;align-items:baseline;gap:6px;">
         <div class="brand-name">SADI</div>
@@ -144,20 +141,3 @@
     <span class="cert">Power BI integrado</span>
   </div>
 </div>
-</div>
-
-
-
-
-<script>
-const $ = id => document.getElementById(id);
-$('btnPrueba').onclick = () => $('modalPrueba').classList.add('open');
-$('cancelPrueba').onclick = () => $('modalPrueba').classList.remove('open');
-$('closePrueba').onclick = () => { $('modalPrueba').classList.remove('open'); $('formPrueba').style.display='block'; $('successPrueba').style.display='none'; };
-$('confirmPrueba').onclick = () => { $('formPrueba').style.display='none'; $('successPrueba').style.display='block'; };
-
-$('btnAsesoria').onclick = () => $('modalAsesoria').classList.add('open');
-$('cancelAsesoria').onclick = () => $('modalAsesoria').classList.remove('open');
-$('closeAsesoria').onclick = () => { $('modalAsesoria').classList.remove('open'); $('formAsesoria').style.display='block'; $('successAsesoria').style.display='none'; };
-$('confirmAsesoria').onclick = () => { $('formAsesoria').style.display='none'; $('successAsesoria').style.display='block'; };
-</script>
